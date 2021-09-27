@@ -1,0 +1,46 @@
+import java.util.Scanner;
+ public class studenttest {
+	
+Scanner in=new Scanner(System.in);
+String name,branch;
+int rollno;
+float cgpa;
+
+public void getdata()
+{
+    Scanner sc=new Scanner (System.in);
+    
+	System.out.println("student name:");
+	name=sc.next();
+	
+	System.out.println("student branch:");
+	branch=sc.next();
+	
+	System.out.println("student rollno:");
+	rollno=sc.nextInt();
+	
+	System.out.println("student cgpa:");
+    cgpa=sc.nextFloat();
+    
+}
+
+public void printdata()
+{
+	System.out.println("student name:"+name);
+	System.out.println("student branch:"+branch);
+	System.out.println("student rollno:"+rollno);
+	System.out.println("student cgpa:"+cgpa);
+}
+};
+
+
+ public class studenttest {
+    
+    public static void main(String[] args){
+        student s1=new student();
+        student s2=new student();
+        s1.getdata();
+        s1.printdata();
+        s2.getdata();
+        s2.printdata();
+    }
