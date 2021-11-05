@@ -1,0 +1,41 @@
+package inheritance;
+
+
+class Employee{
+    float salary = 56000;
+    void dispSalary()
+    {
+        System.out.println("The Employee salary is :" +salary);
+    }
+}
+
+class PermanentEmp extends Employee{
+    double hike = 0.8;
+    void dispSalary(){
+        System.out.println("Permanent Emp class");
+    }
+    void incrementSalary()
+    {
+        dispSalary();
+        super.dispSalary();
+        System.out.println("The Permanent Employee incremented salary is :" +(salary)+(salary));
+    }
+}
+
+class TemporaryEmp extends Employee{
+    double hike = 0.65;
+    void incrementSalary()
+    {
+        super.dispSalary();
+        System.out.println("The Temporary Employee increment salary is :" +(salary)+(salary));
+    }
+}
+
+public class hierarchicalinheritance {
+    public static void main(String args[]){
+        PermanentEmp p = new PermanentEmp();
+        TemporaryEmp t = new TemporaryEmp();
+        p.incrementSalary();
+        t.incrementSalary();
+    }
+}
