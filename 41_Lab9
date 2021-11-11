@@ -1,0 +1,34 @@
+//Write a java program to create an abstract class named Shape that contains two integers and an abstract method named printArea(). Provide three classes named Rectangle, Triangle and Circle such that each one of the classes extends the class Shape. Each one of the classes contain only the method printArea() that prints the area of the given shape.
+abstract class Shape{
+      abstract void Area();
+}
+      
+class Rectangle extends Shape{
+    void Area(){
+        System.out.println("Area of Rectangle is length*breadth");
+              
+          }
+}
+class Triangle extends Shape{
+	void Area(){
+		System.out.println("Area of Triangle is (base*height)/2");
+	}
+}
+
+class Circle extends Shape{
+	void Area(){
+		System.out.println("Area of Circle is (22/7)*radius*radius ");
+		}
+}
+
+public class Main {
+	public static void main(String[] args) {
+	
+		Rectangle r=new Rectangle();
+		Triangle t=new Triangle();
+		Circle c=new Circle();
+		r.Area();
+		t.Area();
+		c.Area();
+	}
+}
