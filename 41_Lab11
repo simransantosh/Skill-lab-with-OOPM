@@ -1,0 +1,42 @@
+public class Main
+{
+public static int divide(int x,int y)
+{
+int z=0;
+try
+{
+try
+{
+z= x/y;
+}
+finally
+{
+}
+}
+
+catch(ArithmeticException ex)
+{
+    
+System.out.println(ex);
+}
+return z;
+}
+public static void main(String args[]){
+	Scanner in=new Scanner(System.in); 
+int a=in.nextInt();
+{
+try
+{
+int a;
+int b;
+int c=divide(a,b);
+
+System.out.println("Result is="+c);
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+}
+}
+
